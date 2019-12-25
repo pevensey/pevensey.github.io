@@ -1,14 +1,14 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              Welcome to Pevensey's note
+bio:                'Keep Learning.'
+description:        "Personal website for my note, story and biography"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://pevensey.github.io/
+url:                https://pevensey.github.io
 # Jekyll
 permalink:          /:title/
 markdown:           kramdown
@@ -25,7 +25,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:   pevensey
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -39,7 +39,7 @@ disqus_shortname:   taylantatli
 #email:
 #twitter:            username
 #facebook:           username
-github-url:         https://github.com/pevensey/
+github-url:         pevensey
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
@@ -49,7 +49,7 @@ github-url:         https://github.com/pevensey/
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              befington
+steam:              pevensey
 #dribbble:          username
 #youtube:           username
 #youtube-channel:   channel
