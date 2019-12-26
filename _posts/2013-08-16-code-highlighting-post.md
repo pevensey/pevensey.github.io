@@ -24,7 +24,7 @@ To modify styling and highlight colors edit `/assets/css/syntax.css`.
 {% endhighlight %}
 
 {% highlight python %}
-{% raw %}
+
 import math
 import numpy as np
 
@@ -248,7 +248,6 @@ while True:
         print(" ")
         exit()
 
-{% endraw %}
 {% endhighlight %}
 
 {% highlight ruby %}
