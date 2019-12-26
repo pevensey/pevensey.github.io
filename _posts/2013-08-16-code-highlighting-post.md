@@ -328,8 +328,7 @@ module Jekyll
 end
 ~~~
 
-### GitHub Gist Embed
+### Video
 
-An example of a Gist embed below.
 
-{% gist mmistakes/6589546 %}
+<iframe width="560" height="315" src="//https://lh3.googleusercontent.com/80g7OuyZ9WfRQHEK1vum3jsffz-Atgl_w2XiV4Ci9QgZBrXmnAtsJIE7HMCW_AdoNg477-kzgmf_AHoecddN0dc9xlfLev_nQVLqirOURuC_BXVGTYmsR0ETmTuORUcAoTr8x32kmA=m18" frameborder="0"> </iframe>
