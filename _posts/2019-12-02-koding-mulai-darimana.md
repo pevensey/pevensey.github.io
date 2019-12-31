@@ -11,6 +11,7 @@ comments: true
 Sering sekali saya mendengar pertanyaan  seperti "Kak, kalo koding mulai dari mana belajarnya?" atau “Bang, kalo mau ngoding mulai dari mana ya? Bingung nih hehe”, pertanyaan-pertanyaan tersebut sering sekali keluar dari seorang mahasiswa baru yang mulai belajar programming dan bingung mau mulai dari mana belajar programming. Kebetulan tulisan ini juga dibuat setelah saya menerima pertanyaan seperti diatas dari seorang teman yang sedang belajar bahasa pemrograman C, jadi saya mencoba menjelaskan kepada beliau dengan perlahan dan saya catat step by stepnya kemudian dituangkan dalam tulisan ini hehe.
 
 Pada tulisan ini saya akan menjelaskan beberapa tahapan yang dilakukan pada saat saya belajar programming, tentu setiap orang mempunyai cara belajar dan perspektif tersendiri pada saat belajar, jadi belum tentu tahapan-tahapan yang saya jabarkan akan bekerja juga pada orang lain. Sudah cukup basa-basinya, kita langsung ke inti pembahasan.
+
 Bagi pemula yang baru belajar programming, saran saya sering-sering praktikum atau mencoba kode program buatan kamu sendiri. Selain kamu mendapatkan materi teori dari bangku kuliah atau kursus-kursus programming, kamu juga semakin mengerti programming secara komprehensif , karena belajar programming dengan cara menghafal teori saja tidak cukup. Semakin sering latihan soal atau kasus programming dan kamu mencoba menyelesaikan kasus tersebut dengan kode kamu sendiri, maka pemahaman kamu mengenai programming semakin baik.
 
 "Terus bagaimana kak cara praktikum atau mencoba membuat kode kita sendiri?"
