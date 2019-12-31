@@ -4,7 +4,7 @@ title: "Koding Mulai Darimana?"
 date: 2019-12-02
 excerpt: "Panduan dalam ngoding pertama"
 tags: [koding]
-comments: true
+comments: false
 ---
 
 
@@ -23,7 +23,7 @@ apa itu IDE? singkatnya IDE merupakan workspace atau meja kerja kalian untuk mem
 IDE untuk C bisa menggunakan Dev C++ atau Borland C++, untuk Java bisa menggunakan NetBeans IDE. Untuk bahasa pemrograman lainnya bisa dicari di browser masing-masing dengan menuliskan nama bahasa pemrograman + IDE.
 
 ## 2. Mulai program pertama.
-Untuk memulai program pertama bisa dengan Hello World, atau langsung saja menerapkan teori-teori dan kode-kode yang didapat dari bangku kuliah atau kursus-kursus programming. Kemudian jalankan program kalian dan tunggu hingga program sukses dijalankan.
+Untuk memulai program pertama bisa dengan Hello World, atau langsung saja menerapkan teori-teori dan kode-kode yang didapat dari bangku kuliah atau kursus-kursus programming. Kemudian jalankan program kamu dan tunggu hingga program sukses dijalankan.
 
 ## 3. Bertemu error
 Yak selamat, kamu berhasil bertemu dengan error pertama kamu. Hal yang mungkin akan ditemui saat menjalankan program pertama itu adalah error. Hal ini merupakan hal yang wajar sebagai programmer, baik itu programmer pemula atau ahli pasti bertemu dengan error. Jadi jangan takut jika bertemu dengan error. Saran saya jika bertemu error perhatikan baik-baik kode yang kamu tulis, baik itu struktur, sintaks atau kesalahan kecil seperti ;. Jika sudah melakukan penyisiran kode secara teliti dan tidak kunjung bertemu solusi, ada baiknya kamu cari pesan kesalahan error tersebut di internet. Biasanya jawaban dari stackoverflow akan berada pada posisi paling atas pencarian.
