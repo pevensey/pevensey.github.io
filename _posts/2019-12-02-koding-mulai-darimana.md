@@ -37,4 +37,4 @@ Coba terus program yang kamu buat hingga berhasil dijalankan, jika bertemu error
 Jadi kesimpulannya, koding bisa dimulai dengan menginstall “alat-alat” pendukung seperti IDE kemudian jika sudah mempunyai “alat” yang dibutuhkan siapkan “bahan” yang akan dibuat sebagai program, “bahan” tersebut bisa dimulai dari kode program Hello World, materi kuliah atau kursus-kursus programming, jalankan program tersebut hingga semua error dapat diatasi dan program berjalan sesuai harapan. 
 Sekian tulisan saya, maaf apabila masih terdapat banyak kekurangan, semoga tulisan ini bermanfaat bagi para pembaca. Terimakasih.
 
-<html><align ="center> “Error yang dihadapi seorang programmer pemula dan ahli sebenarnya sama, yang membedakan adalah mental dalam menghadapi error tersebut” - Iskandar Soesman </html>
+“Error yang dihadapi seorang programmer pemula dan ahli sebenarnya sama, yang membedakan adalah mental dalam menghadapi error tersebut” - Iskandar Soesman
