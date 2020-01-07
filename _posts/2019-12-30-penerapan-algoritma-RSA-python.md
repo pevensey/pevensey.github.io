@@ -40,6 +40,7 @@ Materi kriptografi lainnya bisa liat [disini](http://informatika.stei.itb.ac.id/
 
 ### Kode Program
 
+Program dibuat menggunakan Python versi 3.7 dan menggunakan library math & numpy.
 {% highlight python %}
 
 import math
