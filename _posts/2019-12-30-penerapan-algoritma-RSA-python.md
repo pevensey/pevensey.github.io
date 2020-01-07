@@ -271,7 +271,7 @@ while True:
 ### Video
 Video penjelasan cara menjalankan dan menggunakan program.
 
-<iframe width="560" height="315" src="//https://s.id/by9Sr" frameborder="0"> </iframe>
+<iframe width="560" height="315" src="//www.s.id/by9Sr" frameborder="0"> </iframe>
 
 
 Sekian tulisan saya, maaf apabila masih terdapat banyak kekurangan, dan semoga tulisan ini bermanfaat bagi para pembaca. Terimakasih.
