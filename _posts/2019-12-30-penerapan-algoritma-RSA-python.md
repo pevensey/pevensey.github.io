@@ -272,7 +272,7 @@ while True:
 Video penjelasan cara menjalankan dan menggunakan program.
 
 
-<iframe src="https://drive.google.com/file/d/1zLYp0rLkkzwUBWVwYeHorWL53QUCSSzi/preview" width="100%" height="480" frameborder="0"></iframe>
+<iframe src="https://drive.google.com/file/d/1zLYp0rLkkzwUBWVwYeHorWL53QUCSSzi/preview" width="100%" height="100%" frameborder="0"></iframe>
 
 
 
