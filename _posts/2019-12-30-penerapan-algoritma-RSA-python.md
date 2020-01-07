@@ -7,7 +7,7 @@ tags: [kriptografi, python]
 comments: false
 ---
 
-Pada tulisan ini, saya ingin berbagi mengenai pengalaman membuat program penerapan algoritma RSA yang dikerjakan bersama teman saya [Aziz] (linkedin link).
+Pada tulisan ini, saya ingin berbagi mengenai pengalaman membuat program penerapan algoritma RSA yang dikerjakan bersama teman saya [Aziz](https://www.linkedin.com/in/miftakhulaziz03/).
 Dalam tulisan ini akan disertakan penjelasan mengenai algoritma RSA, kode program, video cara menggunakan program dan referensi yang digunakan dalam membuat program.
 
 #RSA
