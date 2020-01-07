@@ -7,9 +7,9 @@ comments: false
 ---
 
 
-<a href="https://sourcerer.io/pevensey"><img src="https://avatars1.githubusercontent.com/u/33005311?v=4" height="50px" width="50px" alt=""/></a>
 
-<a href="https://sourcerer.io/pevensey"><img src="https://sourcerer.io/icons/logo-sharing.svg"height="48px" alt="Sourcerer"></a>
+
+<a href="https://sourcerer.io/pevensey"><img src="https://sourcerer.io/icons/logo-sharing.svg"height="16px" alt="Sourcerer"></a>
 <a href="https://sourcerer.io/pevensey"><img src="https://sourcerer.io/icons/logo-sharing.svg"height="48px" alt="Sourcerer"></a>
 
 <a href="https://sourcerer.io/pevensey"><img src="https://img.shields.io/badge/Java-64%20commits-orange.svg" alt=""></a>
