@@ -269,5 +269,6 @@ while True:
 {% endhighlight %}
 
 ### Video
+Video penjelasan cara menjalankan dan menggunakan program.
 
 <iframe width="560" height="315" src="https://lh3.googleusercontent.com/foy6KelNMrNAAhDV6VmoazW2PTB65aTQkoWWu1i2VBNiY7cM1ghVWS7AkEQ-X6uFQ-pWEPMOawJqVVldLGITwtb4rcriKeWRKTDRDi8OpsVgmayfT7lp7JhfuQaM5xlj_9yPzSobYg=m37" frameborder="0"> </iframe>
