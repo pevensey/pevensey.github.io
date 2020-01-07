@@ -271,10 +271,9 @@ while True:
 ### Video
 Video penjelasan cara menjalankan dan menggunakan program.
 
-<iframe src="https://photos.app.goo.gl/v3WU1ahB4jG9RfRw8" frameborder="0"></iframe>
-<iframe src="https://drive.google.com/file/d/1zLYp0rLkkzwUBWVwYeHorWL53QUCSSzi/preview" frameborder="0"></iframe>
-<iframe src="//https://drive.google.com/file/d/1zLYp0rLkkzwUBWVwYeHorWL53QUCSSzi/preview" frameborder="0"></iframe>
-<iframe src="//https://drive.google.com/file/d/1zLYp0rLkkzwUBWVwYeHorWL53QUCSSzi/preview" width="640" height="480" frameborder="0"></iframe>
+
+<iframe src="https://drive.google.com/file/d/1zLYp0rLkkzwUBWVwYeHorWL53QUCSSzi/preview" width="640" height="480" frameborder="0"></iframe>
+
 
 
 
