@@ -10,7 +10,7 @@ comments: false
 Pada tulisan ini, saya ingin berbagi mengenai pengalaman membuat program penerapan algoritma RSA yang dikerjakan bersama teman saya [Aziz](https://www.linkedin.com/in/miftakhulaziz03/).
 Dalam tulisan ini akan disertakan penjelasan mengenai algoritma RSA, kode program, video cara menggunakan program dan referensi yang digunakan dalam membuat program.
 
-#RSA
+### RSA
 RSA merupakan sebuah algoritma kriptografi kunci-publik yang dibuat oleh Ron Rivest, Adi Shamir, dan Len Adleman pada tahun 1976 di MIT. Nama RSA
 diambil dari singkatan nama para penemunya. Keamanan algoritma RSA terletak pada sulitnya memfaktorkan bilangan yang besar menjadi faktor-faktor prima.
 
@@ -32,9 +32,11 @@ Pembangkitan sepasang kunci :
 4. Pilih sebuah bilangan bulat e untuk kunci publik, sebut, e
    relatif prima terhadap Φ(n) .
 5. Hitung kunci dekripsi, d, dengan persamaaan
-   ed ≡ 1 (mod Φ(n)) atau d ≡ e⁻¹ mod (Φ(n))
+   ed ≡ 1 (mod Φ(n)) atau d ≡ e⁻¹ mod (Φ(n)).
 
-Sumber : [Algoritma RSA by Rinaldi Munir](http://informatika.stei.itb.ac.id/~rinaldi.munir/Kriptografi/2017-2018/Algoritma-RSA-(2018).pdf)
+Referensi : [Algoritma RSA by Rinaldi Munir](http://informatika.stei.itb.ac.id/~rinaldi.munir/Kriptografi/2017-2018/Algoritma-RSA-(2018).pdf)
+
+Materi kriptografi lainnya bisa liat [disini](http://informatika.stei.itb.ac.id/~rinaldi.munir/Kriptografi/2018-2019/kripto18-19.htm)
 
 ### Kode Program
 
