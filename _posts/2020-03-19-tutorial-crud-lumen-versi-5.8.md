@@ -46,7 +46,7 @@ Ohya sebagai catatan saya menggunakan sistem operasi Windows 10, jadi perintah-p
 
 Pertama-tama kita install Lumen terlebih dahulu, buka CMD kemudian pindah ke direktori
 
-{% highlight cmd %}
+{% highlight python %}
 C:\xampp\htdocs>
 {% endhighlight %}
 
