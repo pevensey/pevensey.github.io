@@ -47,12 +47,13 @@ Ohya sebagai catatan saya menggunakan sistem operasi Windows 10, jadi perintah-p
 Pertama-tama kita install Lumen terlebih dahulu, buka CMD kemudian pindah ke direktori 
 {% highlight cmd %}
 C:\xampp\htdocs>
-{% highlight cmd %}
+{% endhighlight %}
 
 Kemudian jalankan perintah berikut untuk menginstall Lumen versi 5.8 :
-{% highlight cmd %}
+{% highlight python %}
 composer create-project laravel/lumen LatihanLumen "5.8.*" --prefer-dist
 {% endhighlight %}
+
 
 Tunggu hingga instalasi selesai. Jika instalasi sudah selesai kita lakukan beberapa konfigurasi terlebih dahulu.
 Buka  folder instalasi LatihanLumen {% highlight cmd %}(C:\xampp\htdocs\LatihanLumen){% highlight cmd %} menggunakan VSCODE atau text editor favorit kalian. Struktur folder Lumen akan terlihat seperti ini :
