@@ -30,24 +30,25 @@ Sumber gambar : https://medium.com/@laurencei/lumen-vs-laravel-performance-in-20
 
 ### Instalasi dan Konfigurasi
 Pada tutorial ini siapkan alat dan bahan sebagai berikut :
-•	PHP >= 7.1.3
-•	Composer
-•	Text editor favorit (saya menggunakan VSCODE)
+1. PHP >= 7.1.3
+2. Composer
+3. Text editor favorit (saya menggunakan VSCODE)
 
 Kalo alat dan bahan belum siap baiknya download alat dan bahan tersebut terlebih dahulu :
 
-PHP : [Download PHP](https://www.apachefriends.org/index.html)
-Composer : [Download Composer](https://getcomposer.org/)
-VSCODE [Download VSCODE](https://code.visualstudio.com/)
+PHP : [Download PHP](https://www.apachefriends.org/index.html)<br>
+Composer : [Download Composer](https://getcomposer.org/)<br>
+VSCODE [Download VSCODE](https://code.visualstudio.com/)<br>
 
 Oke jika alat dan bahan sudah siap kita lanjutkan ke instalasi dan konfigurasi.
 Ohya sebagai catatan saya menggunakan sistem operasi Windows 10, jadi perintah-perintah dan susunan direktori pada tutorial ini mungkin akan berbeda di sistem operasi berbasis Linux, OS X dan lainnya.
 
 Pertama-tama kita install Lumen terlebih dahulu, buka CMD kemudian pindah ke direktori 
-{% highlight python %}
-C:\xampp\htdocs
+{% highlight cmd %}
+C:\xampp\htdocs>
 {% endhighlight %}
 
+Kemudian jalankan perintah berikut untuk menginstall Lumen versi 5.8 :
 
 
 
