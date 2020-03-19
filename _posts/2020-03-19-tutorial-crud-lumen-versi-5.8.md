@@ -44,13 +44,13 @@ VSCODE [Download VSCODE](https://code.visualstudio.com/)<br>
 Oke jika alat dan bahan sudah siap kita lanjutkan ke instalasi dan konfigurasi.
 Ohya sebagai catatan saya menggunakan sistem operasi Windows 10, jadi perintah-perintah dan susunan direktori pada tutorial ini mungkin akan berbeda di sistem operasi berbasis Linux, OS X dan lainnya.
 
-Pertama-tama kita install Lumen terlebih dahulu, buka CMD kemudian pindah ke direktori
+Pertama-tama kita install Lumen terlebih dahulu, buka CMD kemudian pindah ke direktori.
 
 {% highlight python %}
 C:\xampp\htdocs>
 {% endhighlight %}
 
-Kemudian jalankan perintah berikut untuk menginstall Lumen versi 5.8 :
+Kemudian jalankan perintah berikut untuk menginstall Lumen versi 5.8.
 
 {% highlight python %}
 composer create-project laravel/lumen LatihanLumen "5.8.*" --prefer-dist 
