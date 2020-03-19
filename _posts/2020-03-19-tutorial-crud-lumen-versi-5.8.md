@@ -4,6 +4,7 @@ title: Tutorial CRUD Lumen 5.8
 date: 2020-03-19
 excerpt: "Pembuatan dan Pengujian RESTful API menggunakan Lumen"
 tags: [tutorial, php, lumen]
+feature: https://i1.wp.com/wp.laravel-news.com/wp-content/uploads/2015/04/lumen.png?resize=2200%2C1125
 comments: false
 ---
 
