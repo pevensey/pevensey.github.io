@@ -53,7 +53,7 @@ C:\xampp\htdocs>
 Kemudian jalankan perintah berikut untuk menginstall Lumen versi 5.8.
 
 {% highlight python %}
-composer create-project laravel/lumen LatihanLumen "5.8.*" --prefer-dist 
+"composer create-project laravel/lumen LatihanLumen "5.8.*" --prefer-dist" 
 {% endhighlight %}
 
 
