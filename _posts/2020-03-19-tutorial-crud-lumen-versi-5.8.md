@@ -58,7 +58,7 @@ composer create-project laravel/lumen LatihanLumen "5.8.*" --prefer-dist
 
 
 Tunggu hingga instalasi selesai. Jika instalasi sudah selesai kita lakukan beberapa konfigurasi terlebih dahulu.
-Buka  folder instalasi LatihanLumen {% highlight cmd %}(C:\xampp\htdocs\LatihanLumen){% highlight cmd %} menggunakan VSCODE atau text editor favorit kalian. Struktur folder Lumen akan terlihat seperti ini :
+Buka  folder instalasi LatihanLumen {% highlight cmd %}(C:\xampp\htdocs\LatihanLumen){% endhighlight cmd %} menggunakan VSCODE atau text editor favorit kalian. Struktur folder Lumen akan terlihat seperti ini :
 
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/ss-vscode-1.png"></a>
