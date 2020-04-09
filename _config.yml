@@ -1,7 +1,8 @@
 # Site
 title:              Welcome to Pevensey's note
 bio:                'Keep Learning.'
-description:        "Personal website for my note, story and biography"
+description:        "Personal website for my note, story and biography.
+                    Theme forked from Taylantati/Moon"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/badge.png'
@@ -36,7 +37,7 @@ disqus_shortname:   yuliantopambudi
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
+email:               yuliantopambudi45@gmail.com
 #twitter:            username
 #facebook:           username
 github-url:         pevensey
