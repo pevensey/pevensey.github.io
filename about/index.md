@@ -13,6 +13,8 @@ Saya merupakan seorang yang hobi membaca apapun itu, lebih tertarik lagi kalo me
 
 
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>    
-<div class="LI-profile-badge" align="center"  data-version="v1" data-size="large" data-locale="in_ID" data-type="vertical" data-theme="light" data-vanity="yulianto-pambudi"><a class="LI-simple-link" href='https://id.linkedin.com/in/yulianto-pambudi?trk=profile-badge'>Yulianto Pambudi</a></div>
+<div class="LI-profile-badge" align="center"  data-version="v1" data-size="large" data-locale="in_ID" data-type="vertical" data-theme="light" data-vanity="yulianto-pambudi"><a class="LI-simple-link" href='https://id.linkedin.com/in/yulianto-pambudi?trk=profile-badge'>LinkedIn Profile (vertical+center)</a></div>
+
+<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="in_ID" data-type="horizontal" data-theme="dark" data-vanity="yulianto-pambudi"><a class="LI-simple-link" href='https://id.linkedin.com/in/yulianto-pambudi?trk=profile-badge'>horizontal</a></div>
 
 Tema ini merupakan hasil forked dari [TaylanTatli/Moon](https://github.com/TaylanTatli/Moon){:target="_blank"}.
