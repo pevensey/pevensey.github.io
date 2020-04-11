@@ -1,8 +1,7 @@
 # Site
-title:              Welcome to Pevensey's note
+title:              Welcome to Pevensey's castle.
 bio:                'Keep Learning.'
-description:        "Personal website for my note, story and biography.
-                    Theme forked from Taylantati/Moon"
+description:        "Personal blog for my note, story and biography. Theme forked from Taylantati/Moon"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/badge.png'
