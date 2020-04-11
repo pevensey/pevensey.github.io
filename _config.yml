@@ -1,8 +1,7 @@
 # Site
 title:              Welcome to Pevensey's castle.
 bio:                'Keep Learning.'
-description:        "Personal blog for my note, story and biography.  
-<a href="https://github.com/pevensey/pevensey.github.io"> Theme forked from Taylantati/Moon</a>"
+description:        "Personal blog for my note, story and biography. This theme forked from TaylanTatli/Moon"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/badge.png'
