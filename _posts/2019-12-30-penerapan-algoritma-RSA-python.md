@@ -7,7 +7,7 @@ tags: [kriptografi, python]
 comments: false
 ---
 
-Pada tulisan ini, saya ingin berbagi mengenai pengalaman membuat program penerapan algoritma RSA yang dikerjakan bersama teman saya [Aziz](https://www.linkedin.com/in/miftakhulaziz03/).
+Pada tulisan ini, saya ingin berbagi mengenai pengalaman membuat program penerapan algoritma RSA yang dikerjakan bersama teman saya [Aziz](https://www.linkedin.com/in/miftakhulaziz03/){:target="_blank"}.
 Dalam tulisan ini akan disertakan penjelasan mengenai algoritma RSA, kode program, video cara menggunakan program dan referensi yang digunakan dalam membuat program.
 
 ### RSA
@@ -34,9 +34,9 @@ Pembangkitan sepasang kunci :
 5. Hitung kunci dekripsi, d, dengan persamaaan
    ed ≡ 1 (mod Φ(n)) atau d ≡ e⁻¹ mod (Φ(n)).
 
-Referensi : [Algoritma RSA by Rinaldi Munir](http://informatika.stei.itb.ac.id/~rinaldi.munir/Kriptografi/2017-2018/Algoritma-RSA-(2018).pdf)
+Referensi : [Algoritma RSA by Rinaldi Munir](http://informatika.stei.itb.ac.id/~rinaldi.munir/Kriptografi/2017-2018/Algoritma-RSA-(2018).pdf){:target="_blank"}
 
-Materi kriptografi lainnya bisa liat [disini](http://informatika.stei.itb.ac.id/~rinaldi.munir/Kriptografi/2018-2019/kripto18-19.htm)
+Materi kriptografi lainnya bisa liat [disini](http://informatika.stei.itb.ac.id/~rinaldi.munir/Kriptografi/2018-2019/kripto18-19.htm){:target="_blank"}
 
 ### Kode Program
 
@@ -271,8 +271,9 @@ while True:
 ### Video
 Video penjelasan cara menjalankan dan menggunakan program.
 
-
-<iframe src="https://drive.google.com/file/d/1zLYp0rLkkzwUBWVwYeHorWL53QUCSSzi/preview" width="100%" height="480" frameborder="0"></iframe>
+<div class="video-wrapper">
+    <iframe src="https://drive.google.com/file/d/1zLYp0rLkkzwUBWVwYeHorWL53QUCSSzi/preview" width="100%" height="480" frameborder="0"></iframe>
+</div>
 
 
 
