@@ -254,6 +254,7 @@ Untuk mengakses Lumen buka browser kemudian arahkan ke localhost:8000, Jika berh
 ### Pengujian
 Pada pengujian ini saya menggunakan Postman desktop versi 7.20.1. Gunakan JSON untuk mengirim data.
 1. Pengujian POST
+2. bla bla
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-post-request.png"></a>
 </figure>
@@ -282,7 +283,6 @@ Gunakan method GET dengan endpoint http://localhost:8000/mahasiswa/{id} .
 </figure>
 
 Jika berhasil akan return response :
-## error
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getall-response.png"></a>
 </figure>
