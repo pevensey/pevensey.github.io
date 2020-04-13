@@ -53,16 +53,29 @@ C:\xampp\htdocs>
 Kemudian jalankan perintah berikut untuk menginstall Lumen versi 5.8.
 
 {% highlight php %}
-"composer create-project laravel/lumen LatihanLumen "5.8.*" --prefer-dist" 
+composer create-project laravel/lumen LatihanLumen "5.8.*" --prefer-dist 
 {% endhighlight %}
 
 
 Tunggu hingga instalasi selesai. Jika instalasi sudah selesai kita lakukan beberapa konfigurasi terlebih dahulu.
-Buka  folder instalasi LatihanLumen {% highlight cmd %}(C:\xampp\htdocs\LatihanLumen){% endhighlight cmd %} menggunakan VSCODE atau text editor favorit kalian. Struktur folder Lumen akan terlihat seperti ini :
+Buka  folder instalasi LatihanLumen {% highlight cmd %}C:\xampp\htdocs\LatihanLumen{% endhighlight cmd %} menggunakan VSCODE atau text editor favorit kalian. Struktur folder Lumen akan terlihat seperti ini :
 
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/ss-vscode-1.png"></a>
 </figure>
 
+Buka bootstrap > app.php. Kita akan mengedit beberapa konfigurasi. Hapus komentar pada baris 24 dan 26.
+ini highligher
+{% highlight php %}
+<?php
+...
+
+ $app->withFacades(); //baris 24
+ 
+ $app->withEloquent(); //baris 26
+{% endhighlight %}
+
+ini embed dari gist
+<script src="https://gist.github.com/pevensey/1d92a9f20ff8fe327a1fdbdea663631e.js"></script>
 
 Sekian tulisan saya, maaf apabila masih terdapat banyak kekurangan, dan semoga tulisan ini bermanfaat bagi para pembaca. Terimakasih.
