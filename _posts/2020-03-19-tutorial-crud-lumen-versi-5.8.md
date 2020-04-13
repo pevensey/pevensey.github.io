@@ -13,7 +13,7 @@ Sedikit cerita saya menggunakan Lumen untuk mengerjakan proyek tugas akhir saya,
 pada tugas akhir ini saya menggunakan platform Android sebagai antarmuka aplikasi sedangkan pemrosesan data menggunakan Lumen. 
 Kenapa Lumen? Hmm sebenarnya pilihan pertama saya itu Laravel namun setelah baca-baca dari berbagai sumber dan bertanya ke teman akhirnya saya memilih Lumen, karena yang saya butuhkan pada bagian pemrosesan data cukup RESTful API saja sedangkan antarmuka (view) menggunakan Android.	 
 
-### Apa itu Lumen?
+## Apa itu Lumen?
 Lumen merupakan Micro-Framework PHP yang berbasis dari Framework Laravel. Lumen diciptakan untuk membuat RESTful API dan microservices dengan kecepatan dan performa yang tinggi. Singkatnya Lumen merupakan framework turunan dari Laravel yang lebih fleksibel dan ringan. 
 Performa Laravel vs Lumen disajikan pada tabel berikut :
 
@@ -29,7 +29,7 @@ Performa Laravel vs Lumen disajikan pada tabel berikut :
 
 Sumber gambar : https://medium.com/@laurencei/lumen-vs-laravel-performance-in-2018-1a9346428c01
 
-### Instalasi dan Konfigurasi
+## Instalasi dan Konfigurasi
 Pada tutorial ini siapkan alat dan bahan sebagai berikut :
 1. PHP >= 7.1.3
 2. Composer
@@ -135,7 +135,7 @@ Perintah tersebut digunakan untuk membuat tabel mahasiswa pada “dbmahasiswa”
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/ss-vscode-3.png"></a>
 </figure>
 
-### Membuat Model
+## Membuat Model
 Buka folder app kemudian buat file baru disana dengan nama “ModelMahasiswa.php”.
 
 <figure>
@@ -161,7 +161,7 @@ class ModelMahasiswa extends Model
 Catatan : $table diisi nama tabel yang kita buat pada database.
 Lanjut ke pembuatan controller.
 
-### Membuat Controller
+## Membuat Controller
 Lumen merupakan microframework turunan Laravel dengan beberapa komponen yang sudah dilepas sehingga kita tidak bisa menggunakan php artisan untuk membuat controller. Kenapa dilepas? karena dengan dilepasnya beberapa komponen/library dari Laravel bisa membuat Lumen semakin ringan. Jadi mau tidak mau kita harus membuat file controller secara manual.
 Oke, sekarang kita buat file baru di app > Http > Controllers dengan nama “MahasiswaController.php”.
 
@@ -221,7 +221,7 @@ class MahasiswaController extends Controller
 
 Setelah controller selesai dibuat lanjut ke pembuatan routes.
 
-### Membuat Routes
+## Membuat Routes
 Jika sudah membuat model lanjutkan dengan membuat routes dan endpoint. Secara keseluruhan isi file web.php akan seperti ini :
 
 {% highlight php %}
@@ -246,21 +246,16 @@ php -S localhost:8000 -t ./public
 {% endhighlight %}
 
 Untuk mengakses Lumen buka browser kemudian arahkan ke localhost:8000, Jika berhasil akan muncul seperti ini:
-
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/ss-vscode-5.png"></a>
 </figure>
 
-# Pengujian
-## Pengujian
-### Pengujian
-#### Pengujian
-##### Pengujian
-###### Pengujian
+## Tahap Pengujian
 
 Pada pengujian ini saya menggunakan Postman desktop versi 7.20.1. Gunakan JSON untuk mengirim data.
+
 #### Pengujian POST
-2. bla bla
+
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-post-request.png"></a>
 </figure>
@@ -270,7 +265,7 @@ Jika berhasil maka akan return response :
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-post-response.png"></a>
 </figure>
 
-2. Pengujian GET ALL
+#### Pengujian GET ALL
 
 Gunakan method GET dengan endpoint http://localhost:8000/mahasiswa.
 <figure>
@@ -282,7 +277,8 @@ Jika berhasil akan return response :
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getall-response.png"></a>
 </figure>
 
-3. Pengujian GET by Id
+#### Pengujian GET by Id
+
 Gunakan method GET dengan endpoint http://localhost:8000/mahasiswa/{id} .
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getbyid-request.png"></a>
@@ -293,7 +289,8 @@ Jika berhasil akan return response :
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getall-response.png"></a>
 </figure>
 
-4. Pengujian UPDATE
+#### Pengujian UPDATE
+
 Gunakan method PUT dengan endpoint http://localhost:8000/mahasiswa/{id}. Kita akan mengubah nama dari “Yulianto Pambudi” menjadi “Budi”.
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-put-request.png"></a>
@@ -303,7 +300,9 @@ Jika berhasil akan return response :
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-put-response.png"></a>
 </figure>
-5. Pengujian DELETE
+
+#### Pengujian DELETE 
+
 Gunakan method DELETE dengan endpoint http://localhost:8000/mahasiswa/{id}.
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-delete-request.png"></a>
