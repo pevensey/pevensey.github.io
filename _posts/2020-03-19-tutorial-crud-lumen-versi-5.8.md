@@ -313,10 +313,10 @@ Jika berhasil akan return response :
 Jika kalian tidak mau repot-repot mengikuti tutorial ini secara keseluruhan, bisa lihat repository git yang telah saya buat. Namun, alangkah baiknya jika kalian mengikuti tutorial ini secara step by step agar semakin paham cara kerja Lumen.
 Sekian tulisan saya, maaf apabila masih terdapat banyak kekurangan, dan semoga tulisan ini bermanfaat bagi para pembaca. Terimakasih.
 
-Repository git nya bisa liat disini.
+Repository git nya bisa liat [disini](https://github.com/pevensey/latihan-crud-lumen){:target="_blank"}.
 Kesimpulan dari tutorial ini Lumen merupakan micro-framework turunan dari Laravel yang di desain untuk performa yang cepat dan ringan. Kita juga sudah bisa membuat fungsi CRUD menggunakan Lumen versi 5.8. Kemudian melakukan pengujian terhadap fungsi CRUD yang sudah dibuat menggunakan Postman.
 Oke sekian tutorial CRUD menggunakan Lumen 5.8, jika ada kurang dan lebih mohon maaf. Semoga ilmunya bermanfaat, selamat belajar dan terima kasih :D.
 
 Referensi
-Lumen vs Laravel performance in 2018;
-Tutorial CRUD Lumen 5.4 : Microframework RESTful API untuk Laravel.
+[Lumen vs Laravel performance in 2018](https://medium.com/@laurencei/lumen-vs-laravel-performance-in-2018-1a9346428c01){:target="_blank"};
+[Tutorial CRUD Lumen 5.4 : Microframework RESTful API untuk Laravel](https://medium.com/@kiddy.xyz/tutorial-crud-lumen-5-4-microframework-restful-api-untuk-laravel-ab2a5783d55){:target="_blank"}.
