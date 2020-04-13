@@ -251,9 +251,15 @@ Untuk mengakses Lumen buka browser kemudian arahkan ke localhost:8000, Jika berh
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/ss-vscode-5.png"></a>
 </figure>
 
+# Pengujian
+## Pengujian
 ### Pengujian
+#### Pengujian
+##### Pengujian
+###### Pengujian
+
 Pada pengujian ini saya menggunakan Postman desktop versi 7.20.1. Gunakan JSON untuk mengirim data.
-1. Pengujian POST
+#### Pengujian POST
 2. bla bla
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-post-request.png"></a>
