@@ -254,13 +254,11 @@ Untuk mengakses Lumen buka browser kemudian arahkan ke localhost:8000, Jika berh
 ### Pengujian
 Pada pengujian ini saya menggunakan Postman desktop versi 7.20.1. Gunakan JSON untuk mengirim data.
 1. Pengujian POST
-
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-post-request.png"></a>
 </figure>
 
 Jika berhasil maka akan return response :
-
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-post-response.png"></a>
 </figure>
@@ -286,7 +284,7 @@ Gunakan method GET dengan endpoint http://localhost:8000/mahasiswa/{id} .
 Jika berhasil akan return response :
 ## error
 <figure>
-    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getbyid-response.png"></a>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getall-response.png"></a>
 </figure>
 
 4. Pengujian UPDATE
@@ -300,7 +298,7 @@ Jika berhasil akan return response :
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-put-response.png"></a>
 </figure>
 5. Pengujian DELETE
-Gunakan method DELELTE dengan endpoint http://localhost:8000/mahasiswa/{id}.
+Gunakan method DELETE dengan endpoint http://localhost:8000/mahasiswa/{id}.
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-delete-request.png"></a>
 </figure>
@@ -318,5 +316,7 @@ Kesimpulan dari tutorial ini Lumen merupakan micro-framework turunan dari Larave
 Oke sekian tutorial CRUD menggunakan Lumen 5.8, jika ada kurang dan lebih mohon maaf. Semoga ilmunya bermanfaat, selamat belajar dan terima kasih :D.
 
 Referensi
+
 [Lumen vs Laravel performance in 2018](https://medium.com/@laurencei/lumen-vs-laravel-performance-in-2018-1a9346428c01){:target="_blank"};
+
 [Tutorial CRUD Lumen 5.4 : Microframework RESTful API untuk Laravel](https://medium.com/@kiddy.xyz/tutorial-crud-lumen-5-4-microframework-restful-api-untuk-laravel-ab2a5783d55){:target="_blank"}.
