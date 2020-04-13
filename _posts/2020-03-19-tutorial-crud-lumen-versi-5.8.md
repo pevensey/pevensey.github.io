@@ -129,7 +129,7 @@ Kemudian jalankan perintah ini di (C:\xampp\htdocs\LatihanLumen) :
 php artisan migrate
 {% endhighlight %}
 
-Perintah tersebut digunakan untuk membuat tabel mahasiswa pada “dbmahasiswa” dengan field id (big int), nama(varchar), nim(integer) created_at (timestamp) dan updated_at (timestamp)
+Perintah tersebut digunakan untuk membuat tabel mahasiswa pada “dbmahasiswa” dengan field id (big int), nama(varchar), nim(integer) created_at (timestamp) dan updated_at (timestamp).
 
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/ss-vscode-3.png"></a>
@@ -251,11 +251,9 @@ Untuk mengakses Lumen buka browser kemudian arahkan ke localhost:8000, Jika berh
 </figure>
 
 ## Tahap Pengujian
-
 Pada pengujian ini saya menggunakan Postman desktop versi 7.20.1. Gunakan JSON untuk mengirim data.
 
 #### Pengujian POST
-
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-post-request.png"></a>
 </figure>
@@ -266,7 +264,6 @@ Jika berhasil maka akan return response :
 </figure>
 
 #### Pengujian GET ALL
-
 Gunakan method GET dengan endpoint http://localhost:8000/mahasiswa.
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getall-response.png"></a>
@@ -278,7 +275,6 @@ Jika berhasil akan return response :
 </figure>
 
 #### Pengujian GET by Id
-
 Gunakan method GET dengan endpoint http://localhost:8000/mahasiswa/{id} .
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getbyid-request.png"></a>
@@ -290,7 +286,6 @@ Jika berhasil akan return response :
 </figure>
 
 #### Pengujian UPDATE
-
 Gunakan method PUT dengan endpoint http://localhost:8000/mahasiswa/{id}. Kita akan mengubah nama dari “Yulianto Pambudi” menjadi “Budi”.
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-put-request.png"></a>
@@ -302,7 +297,6 @@ Jika berhasil akan return response :
 </figure>
 
 #### Pengujian DELETE 
-
 Gunakan method DELETE dengan endpoint http://localhost:8000/mahasiswa/{id}.
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-delete-request.png"></a>
