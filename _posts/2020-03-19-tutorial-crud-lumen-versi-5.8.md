@@ -46,7 +46,7 @@ Ohya sebagai catatan saya menggunakan sistem operasi Windows 10, jadi perintah-p
 
 Pertama-tama kita install Lumen terlebih dahulu, buka CMD kemudian pindah ke direktori.
 
-{% highlight python %}
+{% highlight shell %}
 C:\xampp\htdocs>
 {% endhighlight %}
 
@@ -58,14 +58,14 @@ composer create-project laravel/lumen LatihanLumen "5.8.*" --prefer-dist
 
 
 Tunggu hingga instalasi selesai. Jika instalasi sudah selesai kita lakukan beberapa konfigurasi terlebih dahulu.
-Buka  folder instalasi LatihanLumen {% highlight cmd %}C:\xampp\htdocs\LatihanLumen{% endhighlight cmd %} menggunakan VSCODE atau text editor favorit kalian. Struktur folder Lumen akan terlihat seperti ini :
+Buka  folder instalasi LatihanLumen (C:\xampp\htdocs\LatihanLumen) menggunakan VSCODE atau text editor favorit kalian. Struktur folder Lumen akan terlihat seperti ini :
 
 <figure>
     <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/ss-vscode-1.png"></a>
 </figure>
 
 Buka bootstrap > app.php. Kita akan mengedit beberapa konfigurasi. Hapus komentar pada baris 24 dan 26.
-ini highligher
+
 {% highlight php %}
 <?php
 ...
@@ -75,7 +75,210 @@ ini highligher
  $app->withEloquent(); //baris 26
 {% endhighlight %}
 
-ini embed dari gist
-<script src="https://gist.github.com/pevensey/1d92a9f20ff8fe327a1fdbdea663631e.js"></script>
+Masih di bootstrap > app.php kemudian scroll down sampai baris 79 kemudian hapus komentar pada baris 79 sampai 81.
 
+{% highlight php %}
+<?php
+...
+  
+$app->register(App\Providers\AppServiceProvider::class); //baris 79
+$app->register(App\Providers\AuthServiceProvider::class); //baris 80
+$app->register(App\Providers\EventServiceProvider::class); //baris 81
+{% endhighlight %}
+
+Lanjut ke konfigurasi database, buka file .env kemudian sesuaikan nama database, username dan password. Kalo database belum ada buat terlebih dahulu. Kurang lebih seperti ini jadinya konfigurasi di file .env :
+
+{% highlight sql %}
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=dbmahasiswa
+DB_USERNAME=root
+DB_PASSWORD=
+DB_TIMEZONE=+07:00
+{% endhighlight %}
+
+Nama database yang saya gunakan “dbmahasiswa”, kenapa? karena pada tutorial ini akan membuat daftar mahasiswa sederhana hehe. Kemudian username “root” dan password kosong sesuai konfigurasi database pada komputer yang saya gunakan.
+Setelah itu kita buat migration dengan perintah berikut (jalankan di C:\xampp\htdocs\LatihanLumen).
+
+{% highlight php %}
+php artisan make:migration tabel_mahasiswa --create=mahasiswa
+{% endhighlight %}
+
+Tunggu migration selesai kemudian buka database > migration > tabel_mahasiswa.php
+Kemudian tambahkan field nama dan nim seperti baris kode berikut :
+
+{% highlight php %}
+<?php
+...
+  
+public function up()
+{
+    Schema::create('mahasiswa', function (Blueprint $table) {
+        $table->bigIncrements('id');
+        $table->string('nama', 100);
+        $table->integer('nim');
+        $table->timestamps();
+    });
+}
+{% endhighlight %}
+
+Kemudian jalankan perintah ini di (C:\xampp\htdocs\LatihanLumen) :
+
+{% highlight php %}
+php artisan migrate
+{% endhighlight %}
+
+Perintah tersebut digunakan untuk membuat tabel mahasiswa pada “dbmahasiswa” dengan field id (big int), nama(varchar), nim(integer) created_at (timestamp) dan updated_at (timestamp)
+
+# gambar struktur tabel mahasiswa #
+
+### Membuat Model
+Buka folder app kemudian buat file baru disana dengan nama “ModelMahasiswa.php”.
+
+# letak mdel mahasiswa #
+
+Kemudian salin kode berikut:
+
+{% highlight php %}
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ModelMahasiswa extends Model
+{
+   protected $table = 'mahasiswa'; 
+}
+{% endhighlight %}
+
+
+Catatan : $table diisi nama tabel yang kita buat pada database.
+Lanjut ke pembuatan controller.
+
+### Membuat Controller
+Lumen merupakan microframework turunan Laravel dengan beberapa komponen yang sudah dilepas sehingga kita tidak bisa menggunakan php artisan untuk membuat controller. Kenapa dilepas? karena dengan dilepasnya beberapa komponen/library dari Laravel bisa membuat Lumen semakin ringan. Jadi mau tidak mau kita harus membuat file controller secara manual.
+Oke, sekarang kita buat file baru di app > Http > Controllers dengan nama “MahasiswaController.php”.
+
+{% highlight php %}
+<?php
+
+namespace App\Http\Controllers;
+
+use App\ModelMahasiswa;
+use Illuminate\Http\Request;
+
+class MahasiswaController extends Controller
+{
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    public function getall(){
+        $data = ModelMahasiswa::all();
+        return response($data);
+    }
+    public function getbyid($id){
+        $data = ModelMahasiswa::where('id',$id)->get();
+        return response ($data);
+    }
+    public function save(Request $request){
+        $data = new ModelMahasiswa();
+        $data->nama = $request->input('nama');
+        $data->nim = $request->input('nim');
+        $data->save();
+    
+        return response('Berhasil Menambah Data');
+    }
+    public function update(Request $request, $id){
+        $data = ModelMahasiswa::where('id',$id)->first();
+        $data->nama = $request->input('nama');
+        $data->nim = $request->input('nim');
+        $data->save();
+    
+        return response('Berhasil Merubah Data');
+    }
+    
+    public function delete($id){
+        $data = ModelMahasiswa::where('id',$id)->first();
+        $data->delete();
+    
+        return response('Berhasil Menghapus Data');
+    }
+}
+{% endhighlight %}
+
+Setelah controller selesai dibuat lanjut ke pembuatan routes.
+
+### Membuat Routes
+Jika sudah membuat model lanjutkan dengan membuat routes dan endpoint. Secara keseluruhan isi file web.php akan seperti ini :
+
+{% highlight php %}
+<?php
+...
+    
+$router->get('/', function () use ($router) {
+    return $router->app->version();
+});
+
+$router->get('/mahasiswa', ['uses' => 'MahasiswaController@getall']);
+$router->get('/mahasiswa/{id}', ['uses' => 'MahasiswaController@getbyid']);
+$router->post('/mahasiswa', ['uses' => 'MahasiswaController@save']);
+$router->put('/mahasiswa/{id}', ['uses' => 'MahasiswaController@update']);
+$router->delete('/mahasiswa/{id}', ['uses' => 'MahasiswaController@delete']);
+{% endhighlight %}
+
+Kemudian jalankan perintah berikut untuk menyalakan Lumen (jalankan di C:\xampp\htdocs\LatihanLumen)
+
+{% highlight php %}
+php -S localhost:8000 -t ./public
+{% endhighlight %}
+
+Untuk mengakses Lumen buka browser kemudian arahkan ke localhost:8000, Jika berhasil akan muncul seperti ini:
+
+# gambar localhost
+
+### Pengujian
+Pada pengujian ini saya menggunakan Postman desktop versi 7.20.1. Gunakan JSON untuk mengirim data.
+1. Pengujian POST
+# gambar pengujian post
+Jika berhasil maka akan return response
+
+2. Pengujian GET ALL
+
+Gunakan method GET dengan endpoint http://localhost:8000/mahasiswa.
+
+Jika berhasil akan return response :
+
+3. Pengujian GET by Id
+Gunakan method GET dengan endpoint http://localhost:8000/mahasiswa/{id} .
+
+Jika berhasil akan return response :
+
+4. Pengujian UPDATE
+Gunakan method PUT dengan endpoint http://localhost:8000/mahasiswa/{id}. Kita akan mengubah nama dari “Yulianto Pambudi” menjadi “Budi”.
+
+Jika berhasil akan return response :
+
+5. Pengujian DELETE
+Gunakan method DELELTE dengan endpoint http://localhost:8000/mahasiswa/{id}.
+
+Jika berhasil akan return response :
+
+Jika kalian tidak mau repot-repot mengikuti tutorial ini secara keseluruhan, bisa lihat repository git yang telah saya buat. Namun, alangkah baiknya jika kalian mengikuti tutorial ini secara step by step agar semakin paham cara kerja Lumen.
 Sekian tulisan saya, maaf apabila masih terdapat banyak kekurangan, dan semoga tulisan ini bermanfaat bagi para pembaca. Terimakasih.
+
+Repository git nya bisa liat disini.
+Kesimpulan dari tutorial ini Lumen merupakan micro-framework turunan dari Laravel yang di desain untuk performa yang cepat dan ringan. Kita juga sudah bisa membuat fungsi CRUD menggunakan Lumen versi 5.8. Kemudian melakukan pengujian terhadap fungsi CRUD yang sudah dibuat menggunakan Postman.
+Oke sekian tutorial CRUD menggunakan Lumen 5.8, jika ada kurang dan lebih mohon maaf. Semoga ilmunya bermanfaat, selamat belajar dan terima kasih :D.
+
+Referensi
+Lumen vs Laravel performance in 2018;
+Tutorial CRUD Lumen 5.4 : Microframework RESTful API untuk Laravel.
