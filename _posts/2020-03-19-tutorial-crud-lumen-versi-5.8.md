@@ -131,12 +131,16 @@ php artisan migrate
 
 Perintah tersebut digunakan untuk membuat tabel mahasiswa pada “dbmahasiswa” dengan field id (big int), nama(varchar), nim(integer) created_at (timestamp) dan updated_at (timestamp)
 
-# gambar struktur tabel mahasiswa #
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/ss-vscode-3.png"></a>
+</figure>
 
 ### Membuat Model
 Buka folder app kemudian buat file baru disana dengan nama “ModelMahasiswa.php”.
 
-# letak mdel mahasiswa #
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/ss-vscode-4.png"></a>
+</figure>
 
 Kemudian salin kode berikut:
 
@@ -243,34 +247,68 @@ php -S localhost:8000 -t ./public
 
 Untuk mengakses Lumen buka browser kemudian arahkan ke localhost:8000, Jika berhasil akan muncul seperti ini:
 
-# gambar localhost
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/ss-vscode-5.png"></a>
+</figure>
 
 ### Pengujian
 Pada pengujian ini saya menggunakan Postman desktop versi 7.20.1. Gunakan JSON untuk mengirim data.
 1. Pengujian POST
-# gambar pengujian post
-Jika berhasil maka akan return response
+
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-post-request.png"></a>
+</figure>
+
+Jika berhasil maka akan return response :
+
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-post-response.png"></a>
+</figure>
 
 2. Pengujian GET ALL
 
 Gunakan method GET dengan endpoint http://localhost:8000/mahasiswa.
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getall-response.png"></a>
+</figure>
 
 Jika berhasil akan return response :
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getall-response.png"></a>
+</figure>
 
 3. Pengujian GET by Id
 Gunakan method GET dengan endpoint http://localhost:8000/mahasiswa/{id} .
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getbyid-request.png"></a>
+</figure>
 
 Jika berhasil akan return response :
+## error
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-getbyid-response.png"></a>
+</figure>
 
 4. Pengujian UPDATE
 Gunakan method PUT dengan endpoint http://localhost:8000/mahasiswa/{id}. Kita akan mengubah nama dari “Yulianto Pambudi” menjadi “Budi”.
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-put-request.png"></a>
+</figure>
 
 Jika berhasil akan return response :
-
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-put-response.png"></a>
+</figure>
 5. Pengujian DELETE
 Gunakan method DELELTE dengan endpoint http://localhost:8000/mahasiswa/{id}.
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-delete-request.png"></a>
+</figure>
 
 Jika berhasil akan return response :
+<figure>
+    <a href="{{ site.url }}/assets/img/ss-vscode-1.png"><img src="{{ site.url }}/assets/img/pengujian-delete-response.png"></a>
+</figure>
 
 Jika kalian tidak mau repot-repot mengikuti tutorial ini secara keseluruhan, bisa lihat repository git yang telah saya buat. Namun, alangkah baiknya jika kalian mengikuti tutorial ini secara step by step agar semakin paham cara kerja Lumen.
 Sekian tulisan saya, maaf apabila masih terdapat banyak kekurangan, dan semoga tulisan ini bermanfaat bagi para pembaca. Terimakasih.
