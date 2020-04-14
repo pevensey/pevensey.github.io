@@ -225,6 +225,13 @@ header .entry-meta {
 	color: #fff;
 	transition: all 5s ease, color 1s ease;
 }
+.ucapan{
+	font-size: 25pt;
+	left: 50%;
+	bottom: 50%;
+	text-align: center;
+	transform: translate(-50%,calc(50% + 100px));
+}
 .feature {
     @include transition(.5s);
     @media #{$small} {
