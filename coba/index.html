@@ -241,7 +241,22 @@
   			bottom: 0px;
   			right: 0px;
   			opacity: 0.3;
-  		}
+          }
+        .inner {
+            max-width: 400px;
+            min-width: 320px;
+            margin: 0 auto;
+            }
+        .timer {
+            display: inline-block;
+        }
+        .timer span {
+            color: #8c3a2b;
+            background-color: #f8f8f8;
+            padding: 2px 4px;
+            border: 0.1px solid #fff;
+            border-radius: 2px;
+        }
   		@keyframes animate{
   			0%{
   				transform: translateY(0) rotate(0deg);
@@ -403,7 +418,9 @@
 			<div class="ucapan" id="quote"></div>
 			<div class="note">ngeng</div>
 			<div class="pengembang">Andika Sujanadi</div>
-		</div>
+        </div>
+        
+        <!-- JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -1064,6 +1081,40 @@
 					setTimeout(typeWriter, speed);
 				}
 			}
+
+            function update_time() {
+                    /* Start Time: 2011.06.19 00:00 */
+                    var start_itme = 31081999;
+                    var duration = parseInt((Date.now() / 1000 - start_itme ), 10);
+
+                    var seconds = duration % 60;
+                    if(seconds < 10) {
+                        seconds = "0" + seconds;
+                    }
+
+                    duration = parseInt((duration / 60), 10);
+                    var minutes = duration % 60;
+                    if(minutes < 10) {
+                        minutes = "0" + minutes;
+                    }
+
+                    duration = parseInt((duration / 60), 10);
+                    var hours = duration % 24;
+                    if(hours < 10) {
+                        hours = "0" + hours;
+                    }
+
+                    duration = parseInt((duration / 24), 10);
+                    var days = duration;
+
+                    $('#day').text(days);
+                    $('#hour').text(hours);
+                    $('#minute').text(minutes);
+                    $('#second').text(seconds);
+
+                    setTimeout('update_time()', 1000);
+                }
+
 			typeWriter();
 		</script>
 	</body>
