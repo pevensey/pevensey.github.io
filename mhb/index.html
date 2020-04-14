@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  <title>SIMP</title>
+	  <title>My Boo</title>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -17,11 +17,13 @@
 	  		width: 100%;
 	  		height: 100vh;
 	  		position: absolute;
-	  		z-index: -1;
+            z-index: -1;
+            /* margin-top : -120 px;   */
 	  	}
 	  	.ubuntu{
 	  		background: linear-gradient(to left,#8942A8,#BA382F);
-	  		opacity: 0;
+            opacity: 0;
+            /* margin-top : -120 px; */
 	  	}
 	  	.dawn{
 	  		background: linear-gradient(0deg, rgba(133,26,0,1) 3%, rgba(255,51,0,1) 19%, rgba(181,103,47,1) 45%, rgba(52,142,200,1) 100%);
@@ -241,7 +243,24 @@
   			bottom: 0px;
   			right: 0px;
   			opacity: 0.3;
-  		}
+          }
+        .inner {
+            max-width: 400px;
+            min-width: 320px;
+            margin: 0 auto;
+            background-color:transparent;
+            color: #fff;
+            }
+        .timer {
+            display: inline-block;
+        }
+        .timer span {
+            color: #8c3a2b;
+            background-color: #f8f8f8;
+            padding: 2px 4px;
+            border: 0.1px solid #fff;
+            border-radius: 2px;
+        }
   		@keyframes animate{
   			0%{
   				transform: translateY(0) rotate(0deg);
@@ -300,8 +319,18 @@
 		  	}
   		}
 	  </style>
-	</head>
-	<body onload="init()">
+    </head>
+    <body onload="init()">
+        <div class="inner">
+            Dear kamu yang aku kagumi dalam diam ,aku sudah hidup lebih dari
+            <div class="timer">
+                <span id="day"></span> Hari
+                <span id="hour"></span> Jam
+                <span id="minute"></span> Menit
+                <span id="second"></span> Detik
+            </div> <br> selama itu aku belun pernah menemukan orang sepertimu
+        </div>
+    
 		<div class="kontrol" onload="readStorage()">
 			<div class="panah"></div>
 			<div class="custom-control custom-radio">
@@ -384,8 +413,10 @@
 			</div>
 			<div class="ucapan" id="quote"></div>
 			<div class="note">ngeng</div>
-			<div class="pengembang">Andika Sujanadi</div>
-		</div>
+			<div class="pengembang">Pevensey</div>
+        </div>
+        
+        <!-- JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -401,6 +432,7 @@
 				readColor();
 				randomQuote();
 				specialEffects();
+                update_time();
 			}
 			baffleEffect = baffle('.note', {
 			    characters: 'supercalifragilisticexpialidocious',
@@ -848,7 +880,7 @@
 				console.log('debug');
 			}
 
-			var txt = 'Halo simp ku sayang';
+			var txt = 'Halo My Boo ku sayang';
 			var txt2 = 'txt';
 
 			function checkTime(i) {
@@ -872,43 +904,49 @@
 				S=s;
 
 				if (H<5){
-					txt='Have a Good Night:)';
+					txt='Pagi, jangan lupa sholat shubuh:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<9){
-					txt='Good Morning You:)';
+					txt='Good Morning Gita syg :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<12){
-					txt='Be Happy Today:)';
+					txt='Jangan lupa makan siang :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<16){
-					txt='Good Afternoon Dear:)';
+					txt='Good Afternoon Gita syg :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<19){
+					txt='Jangan lupa sholat maghrib :)';
+					if(txt != txt2 && !starting)
+						document.getElementById("quote").innerHTML = txt;
+					txt2=txt;
+				}
+                else if(H<20){
 					txt='Good Afternoon, Take a Rest:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<23){
-					txt='Good Evening Sweetie:)';
+					txt='Good Evening My Hunny Bunny:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<=24){
-					txt='Time to Sleep, Good Night:)';
+					txt='Time to Sleep, Good Night Syg:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
@@ -981,48 +1019,28 @@
 			    "source": "Imam Syafi'i"
 			  },
 			  {
-			    "quote": "Just because I carry it all so well doesn't mean it's not heavy",
-			    "source": "Andika Sujanadi"
+			    "quote": "Calm seas never made a good sailor",
+			    "source": "Franklin D. Roosevelt"
 			  },
 			  {
 			    "quote": "Semesta memiliki alurnya masing-masing",
 			    "source": "Andika Sujanadi"
 			  },
-			  {
-			    "quote": "You don't lose, You learn",
-			    "source": "Andika Sujanadi"
+              {
+			    "quote": "Slow progress is better than no progress",
+			    "source": "Anonymous"
 			  },
 			  {
-			    "quote": "I own my own life and my own decission",
-			    "source": "Andika Sujanadi"
+			    "quote": "Error yang dihadapi seorang programmer pemula dan ahli sebenarnya sama, yang membedakan adalah mental dalam menghadapi error tersebut",
+			    "source": "Iskandar Soesman"
 			  },
 			  {
-			    "quote": "Every failure, rejection, betrayal should be the reason for you to come back stronger in life by working on goals and achiving them",
-			    "source": "Andika Sujanadi"
-			  },
-			  {
-			    "quote": "Masa lalu dan frustasi merupakan fondasi dasar untuk menciptakan kembali kehidupan baru yang lebih baik",
-			    "source": "Anthony Robbins"
-			  },
-			  {
-			    "quote": "Ada kalimat yang ingin aku dapatkan dari dia tapi aku dapat dari orang lain",
-			    "source": "Andika Sujanadi"
-			  },
-			  {
-			    "quote": "People doesn't want to end their life, they just wanted to end the pain",
-			    "source": "Andika Sujanadi"
-			  },
-			  {
-			    "quote": "Need someone to talk about life, but sitting alone is much better",
-			    "source": "Andika Sujanadi"
+			    "quote": "Kontribusi itu gak perlu nunggu sampe jago. Sama kayak sedekah gak usah nunggu sampe tajir",
+			    "source": "Petra barus"
 			  },
 			  {
 			    "quote": "Seorang bahagia bukan karena semua benar dalam hidupnya, tapi sikap terhadap hidupnya yang benar",
 			    "source": "Sundar Pichai"
-			  },
-			  {
-			    "quote": "Jika hari ini harus lebih baik darpada hari kemarin dan hari esok lebih baik daripada hari ini maka kelahiranmu adalah hari terburuk yang pernah ada",
-			    "source": "Om Hell"
 			  },
 			]
 			setInterval(randomQuote, 60000);
@@ -1052,6 +1070,40 @@
 					setTimeout(typeWriter, speed);
 				}
 			}
+
+            function update_time() {
+                    /* Start Time: 2011.06.19 00:00 */
+                    var start_itme = 1568033800;
+                    var duration = parseInt((Date.now() / 1000 - start_itme ), 10);
+
+                    var seconds = duration % 60;
+                    if(seconds < 10) {
+                        seconds = "0" + seconds;
+                    }
+
+                    duration = parseInt((duration / 60), 10);
+                    var minutes = duration % 60;
+                    if(minutes < 10) {
+                        minutes = "0" + minutes;
+                    }
+
+                    duration = parseInt((duration / 60), 10);
+                    var hours = duration % 24;
+                    if(hours < 10) {
+                        hours = "0" + hours;
+                    }
+
+                    duration = parseInt((duration / 24), 10);
+                    var days = duration;
+
+                    $('#day').text(days);
+                    $('#hour').text(hours);
+                    $('#minute').text(minutes);
+                    $('#second').text(seconds);
+
+                    setTimeout('update_time()', 1000);
+                }
+
 			typeWriter();
 		</script>
 	</body>
