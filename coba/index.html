@@ -245,11 +245,18 @@
   			opacity: 0.3;
           }
         .inner {
-            max-width: 400px;
+            /* max-width: 400px;
             min-width: 320px;
             margin: 0 auto;
             background-color: opacity(0%);
-            color: #fff;
+            color: #fff; */
+            left: 50%;
+	  		bottom: 0;
+	  		transform: translate(-50%,0%);
+	  		text-align: center;
+	  		font-size: 15pt;
+	  		text-shadow: 0px 0px 10px #000;
+	  		z-index: 2;
             }
         .timer {
             display: inline-block;
@@ -340,7 +347,6 @@
                      -->
     <body onload="init()">
         <div class="inner">
-        
             Dear kamu yang aku kagumi dalam diam ,aku sudah hidup lebih dari
             <div class="timer">
                 <span id="day"></span> Hari
