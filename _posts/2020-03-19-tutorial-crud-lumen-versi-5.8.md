@@ -320,9 +320,9 @@ Referensi
 
 [Tutorial CRUD Lumen 5.4 : Microframework RESTful API untuk Laravel](https://medium.com/@kiddy.xyz/tutorial-crud-lumen-5-4-microframework-restful-api-untuk-laravel-ab2a5783d55){:target="_blank"}.
 
-<body>
-    <script>
-const quotes = [
+
+<script>
+    const quotes = [
 			  {
 			    "quote": "Bila kau tak tahan lelahnya belajar, maka kau harus tahan menanggung perihnya kebodohan",
 			    "source": "Imam Syafi'i"
@@ -331,34 +331,33 @@ const quotes = [
 			    "quote": "Just because I carry it all so well doesn't mean it's not heavy",
 			    "source": "Andika Sujanadi"
 			  },
-]  
+    ]  
 
-setInterval(randomQuote, 60000);
-			function randomQuote(){
-			  let random = quotes[Math.floor(Math.random() * quotes.length)];
-			  quotation.innerText = `"${random.quote}"`;
-			  source.innerText = random.source;
-			}
-            var i = 0;
-			
-			var speed = 50;
-			
-			function typeWriter() {
-				if (i < txt.length) {
-					var o = (i/txt.length*2);
-					var o = o.toFixed(0);
-					var o2 = o-1;
-					if (o2<0)
-						o2=0;
-					var o3 = String(o);
-					var p = "translate(-50%,50%) scale("+o2+")";
-					document.getElementById("quote").innerHTML += txt.charAt(i);
-					i++;
-					$(".jam").css("opacity",o3);
-					$(".bulat").css("transform",p).css("opacity",o2);
-					setTimeout(typeWriter, speed);
-				}
-			}
-			typeWriter();
-		</script>
-</body>
+    setInterval(randomQuote, 60000);
+                function randomQuote(){
+                let random = quotes[Math.floor(Math.random() * quotes.length)];
+                quotation.innerText = `"${random.quote}"`;
+                source.innerText = random.source;
+                }
+                var i = 0;
+                
+                var speed = 50;
+                
+                function typeWriter() {
+                    if (i < txt.length) {
+                        var o = (i/txt.length*2);
+                        var o = o.toFixed(0);
+                        var o2 = o-1;
+                        if (o2<0)
+                            o2=0;
+                        var o3 = String(o);
+                        var p = "translate(-50%,50%) scale("+o2+")";
+                        document.getElementById("quote").innerHTML += txt.charAt(i);
+                        i++;
+                        $(".jam").css("opacity",o3);
+                        $(".bulat").css("transform",p).css("opacity",o2);
+                        setTimeout(typeWriter, speed);
+                    }
+                }
+                typeWriter();
+</script>
