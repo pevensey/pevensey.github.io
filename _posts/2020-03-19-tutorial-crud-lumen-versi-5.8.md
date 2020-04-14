@@ -320,8 +320,13 @@ Referensi
 
 [Tutorial CRUD Lumen 5.4 : Microframework RESTful API untuk Laravel](https://medium.com/@kiddy.xyz/tutorial-crud-lumen-5-4-microframework-restful-api-untuk-laravel-ab2a5783d55){:target="_blank"}.
 
+<div class="ucapan" id="quote"></div>
 
-<script>
+
+<script type="text/javascript">
+    function init(){
+				randomQuote();
+			}
     const quotes = [
 			  {
 			    "quote": "Bila kau tak tahan lelahnya belajar, maka kau harus tahan menanggung perihnya kebodohan",
