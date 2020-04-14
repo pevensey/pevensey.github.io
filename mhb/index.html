@@ -395,7 +395,6 @@
 			gaming=false;
 			tombol=false;
 			function init(){
-				bro();
 				init_auto();
 				readMode();
 				readColor();
@@ -496,19 +495,19 @@
 				gaming=false;
 				manual();
 			}
-			function bro(){
-				namaku = $(".pengembang").text();
-			    var hex, i;
+			// function bro(){
+			// 	namaku = $(".pengembang").text();
+			//     var hex, i;
 
-			    var result = "";
-			    for (i=0; i<namaku.length; i++) {
-			        hex = namaku.charCodeAt(i).toString(16);
-			        result += ("000"+hex).slice(-4);
-			    }
-				if (result!="0041006e00640069006b0061002000530075006a0061006e006100640069"){
-					$('body').fadeOut();
-				}
-			}
+			//     var result = "";
+			//     for (i=0; i<namaku.length; i++) {
+			//         hex = namaku.charCodeAt(i).toString(16);
+			//         result += ("000"+hex).slice(-4);
+			//     }
+			// 	if (result!="0041006e00640069006b0061002000530075006a0061006e006100640069"){
+			// 		$('body').fadeOut();
+			// 	}
+			// }
 			function specialEffects(){
 				if(localStorage.getItem("manualColor")=="#4c1130"){
 					setTimeout(function() { createNote("Mangat Din ngepush course javascriptnya :v"); }, 5000);
@@ -872,43 +871,49 @@
 				S=s;
 
 				if (H<5){
-					txt='Have a Good Night:)';
+					txt='Pagi, jangan lupa sholat shubuh:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<9){
-					txt='Good Morning You:)';
+					txt='Good Morning Gita syg :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<12){
-					txt='Be Happy Today:)';
+					txt='Jangan lupa makan siang :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<16){
-					txt='Good Afternoon Dear:)';
+					txt='Good Afternoon Gita syg :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<19){
+					txt='Jangan lupa sholat maghrib :)';
+					if(txt != txt2 && !starting)
+						document.getElementById("quote").innerHTML = txt;
+					txt2=txt;
+				}
+                else if(H<20){
 					txt='Good Afternoon, Take a Rest:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<23){
-					txt='Good Evening Sweetie:)';
+					txt='Good Evening My Hunny Bunny:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<=24){
-					txt='Time to Sleep, Good Night:)';
+					txt='Time to Sleep, Good Night Syg:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
