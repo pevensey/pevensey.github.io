@@ -67,7 +67,7 @@
 	  		background-color: #0079FF;
 	  		opacity: 0;
 	  	}
-	  	.jam,.ucapan,.quotes{
+	  	.jam,.ucapan,.quotes,.jadian{
 	  		margin: 0px;
 	  		padding: 0px;
 	  		position: absolute;
@@ -98,15 +98,13 @@
 	  		z-index: 2;
 		}
 		.jadian{
-			position: absolute;
-			font-size: 15pt;
-			text-align: center;
-  			color: black;
-  			top: 0px;
-  			left: 50%;
-			opacity: 0.3;
-			text-shadow: 0px 0px 10px #000;
-			z-index: 2;
+			left: 50%;
+	  		top: 0;
+	  		transform: translate(-50%,0%);
+	  		text-align: center;
+	  		font-size: 15pt;
+	  		text-shadow: 0px 0px 10px #000;
+	  		z-index: 2;
 	  	}
 	  	.kontrol{
 	  		margin: 20px;
@@ -291,7 +289,7 @@
 		  		font-size: 15pt;
 		  		transform: translate(-50%,calc(50% + 50px));
 		  	}
-		  	.quotes,.note{
+		  	.quotes,.note,.jadian{
 		  		font-size: 15pt;
 		  	}
 		  	.bulat{
@@ -303,7 +301,7 @@
   			.ucapan{
 		  		font-size: 10pt;
 		  	}
-		  	.quotes{
+		  	.quotes,.jadian{
 		  		font-size: 7pt;
 		  	}
 		  	.note{
