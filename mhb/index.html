@@ -132,7 +132,17 @@
 	  		border-bottom-right-radius: 3px;
 	  		transform: rotate(45deg);
 	  		z-index: 50;
-	  	}
+		}
+		.timer {
+			display: inline-block;
+		}
+		.timer span {
+			color: #8c3a2b;
+			background-color: #f8f8f8;
+			padding: 2px 4px;
+			border: 0.1px solid #fff;
+			border-radius: 2px;
+		}
 	  	#color-picker{
 	  		width: 100%;
 	  	}
@@ -372,6 +382,13 @@
 		<div class="bg blue"></div>
 		<div class="bg custom"></div>
 		<div class="container">
+			<div class="timer">
+				<span id="day"></span> Hari
+				<span id="hour"></span> Jam
+				<span id="minute"></span> Menit
+				<span id="second"></span> Detik
+			</div> <br> selama itu aku belun pernah menemukan orang sepertimu
+		</div>
 			<div class="jadian">
 				<p>Hai My Love Gita, cepet sembuh ya sayang 🤗</p>
 			</div>
@@ -412,6 +429,7 @@
 				readColor();
 				randomQuote();
 				specialEffects();
+				update_time();
 			}
 			baffleEffect = baffle('.note', {
 			    characters: 'supercalifragilisticexpialidocious',
@@ -1060,6 +1078,39 @@
 				}
 			}
 			typeWriter();
+
+			function update_time() {
+					/* Start Time: 2011.06.19 00:00 */
+					var start_itme = 31081999;
+					var duration = parseInt((Date.now() / 1000 - start_itme ), 10);
+
+					var seconds = duration % 60;
+					if(seconds < 10) {
+						seconds = "0" + seconds;
+					}
+
+					duration = parseInt((duration / 60), 10);
+					var minutes = duration % 60;
+					if(minutes < 10) {
+						minutes = "0" + minutes;
+					}
+
+					duration = parseInt((duration / 60), 10);
+					var hours = duration % 24;
+					if(hours < 10) {
+						hours = "0" + hours;
+					}
+
+					duration = parseInt((duration / 24), 10);
+					var days = duration;
+
+					$('#day').text(days);
+					$('#hour').text(hours);
+					$('#minute').text(minutes);
+					$('#second').text(seconds);
+
+					setTimeout('update_time()', 1000);
+			}
 		</script>
 	</body>
 </html>
