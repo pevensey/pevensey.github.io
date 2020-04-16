@@ -382,12 +382,15 @@
 		<div class="bg blue"></div>
 		<div class="bg custom"></div>
 		<div class="container">
+
 			<div class="jadian">
+				Kita udah jadian selama <br>
+				<span id="day"></span> Bulan
 				<span id="day"></span> Hari
 				<span id="hour"></span> Jam
 				<span id="minute"></span> Menit
 				<span id="second"></span> Detik
-			</div> <br> selama itu aku belun pernah menemukan orang sepertimu
+			</div> 
 		</div>
 			<!-- <div class="jadian">
 				<p>Hai My Love Gita, cepet sembuh ya sayang 🤗</p>
@@ -1110,6 +1113,9 @@
 					duration = parseInt((duration / 24), 10);
 					var days = duration;
 
+					var months = Math.floor(days % 12);
+
+					$('#month').text(months);
 					$('#day').text(days);
 					$('#hour').text(hours);
 					$('#minute').text(minutes);
