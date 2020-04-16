@@ -904,7 +904,13 @@
 				M=m;
 				S=s;
 
-				if (H<5){
+				if (H<4){
+					txt='Ayok tidur, jangan kebanyakan pikiran';
+					if(txt != txt2 && !starting)
+						document.getElementById("quote").innerHTML = txt;
+					txt2=txt;
+				}
+				else if (H<5){
 					txt='Pagi, jangan lupa sholat shubuh:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
@@ -940,14 +946,14 @@
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
-                else if(H<20){
-					txt='Good Afternoon, Take a Rest:)';
+                else if(H<21){
+					txt='Istirahat dan evaluasi diri :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<23){
-					txt='Good Evening My Hunny Bunny:)';
+					txt='Good Night My Hunny Bunny:)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
@@ -1080,9 +1086,9 @@
 			typeWriter();
 
 			function update_time() {
-					/* Start Time: 2011.06.19 00:00 */
-					var start_itme = 31081999;
-					var duration = parseInt((Date.now() / 1000 - start_itme ), 10);
+					/* Start Time: 2019.09.09 00:00  (timestamp format)*/
+					var start_timestamp = 1567987200;
+					var duration = parseInt((Date.now() / 1000 - start_timestamp ), 10);
 
 					var seconds = duration % 60;
 					if(seconds < 10) {
