@@ -1113,10 +1113,12 @@
 					duration = parseInt((duration / 24), 10);
 					var days = duration;
 
+					duration = parseInt((duration /60))
 					duration = (days / 30.41);
 					var months = Math.floor(duration);
 
-					var sisahari = duration - months 
+					var sisahari = duration - months
+					sisahari = Math.floor(sisahari * 30.41); 
 
 					$('#month').text(months);
 					$('#day').text(sisahari);
