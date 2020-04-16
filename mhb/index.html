@@ -950,7 +950,7 @@
 					txt2=txt;
 				}
                 else if(H<21){
-					txt='Istirahat dan tenangkan dirsdasdasadsdasadsdasdasasadsdasdasaai :)';
+					txt='Istirahat dan tenangkan diri :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
@@ -1113,10 +1113,13 @@
 					duration = parseInt((duration / 24), 10);
 					var days = duration;
 
-					var months = Math.floor(days / 30.41);
+					duration = (days / 30.41);
+					var months = Math.floor(duration);
+
+					var sisahari = duration - months 
 
 					$('#month').text(months);
-					$('#day').text(days);
+					$('#day').text(sisahari);
 					$('#hour').text(hours);
 					$('#minute').text(minutes);
 					$('#second').text(seconds);
