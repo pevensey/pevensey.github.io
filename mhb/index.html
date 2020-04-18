@@ -1025,7 +1025,49 @@
 					midnight();
 				}
 			}
+			function update_time() {
+					/* Start Time: 2019.09.09 00:00  (timestamp format)*/
+					var start_timestamp = 1567962000;
+					var duration = parseInt((Date.now() / 1000 - start_timestamp ), 10);
 
+					var seconds = duration % 60;
+					if(seconds < 10) {
+						seconds = "0" + seconds;
+					}
+
+					duration = parseInt((duration / 60), 10);
+					var minutes = duration % 60;
+					if(minutes < 10) {
+						minutes = "0" + minutes;
+					}
+
+					duration = parseInt((duration / 60), 10);
+					var hours = duration % 24;
+					if(hours < 10) {
+						hours = "0" + hours;
+					}
+
+					duration = parseInt((duration / 24), 10);
+					var days = duration;
+
+					//duration = parseInt((duration / 30.41))
+					duration = (days / 30.41);
+					var months = Math.floor(duration);
+
+					var sisahari = duration - months
+					sisahari = Math.floor(sisahari * 30.41); 
+
+					$('#month').text(months);
+					$('#day').text(sisahari);
+					$('#hour').text(hours);
+					$('#minute').text(minutes);
+					$('#second').text(seconds);
+
+					console.log(months, " bulan ", sisahari, " hari");
+					console.log(months, " bulan ", days, " hari ", hours, " jam ", minutes, " menit ", seconds, " detik ");
+
+					setTimeout('update_time()', 1000);
+			}
 			const quotes = [
 			{
 			    "quote": seconds+" Bila kau tak tahan lelahnya belajar, maka kau harus tahan menanggung perihnya kebodohan",
@@ -1085,49 +1127,7 @@
 			}
 			typeWriter();
 
-			function update_time() {
-					/* Start Time: 2019.09.09 00:00  (timestamp format)*/
-					var start_timestamp = 1567962000;
-					var duration = parseInt((Date.now() / 1000 - start_timestamp ), 10);
-
-					var seconds = duration % 60;
-					if(seconds < 10) {
-						seconds = "0" + seconds;
-					}
-
-					duration = parseInt((duration / 60), 10);
-					var minutes = duration % 60;
-					if(minutes < 10) {
-						minutes = "0" + minutes;
-					}
-
-					duration = parseInt((duration / 60), 10);
-					var hours = duration % 24;
-					if(hours < 10) {
-						hours = "0" + hours;
-					}
-
-					duration = parseInt((duration / 24), 10);
-					var days = duration;
-
-					//duration = parseInt((duration / 30.41))
-					duration = (days / 30.41);
-					var months = Math.floor(duration);
-
-					var sisahari = duration - months
-					sisahari = Math.floor(sisahari * 30.41); 
-
-					$('#month').text(months);
-					$('#day').text(sisahari);
-					$('#hour').text(hours);
-					$('#minute').text(minutes);
-					$('#second').text(seconds);
-
-					console.log(months, " bulan ", sisahari, " hari");
-					console.log(months, " bulan ", days, " hari ", hours, " jam ", minutes, " menit ", seconds, " detik ");
-
-					setTimeout('update_time()', 1000);
-			}
+			
 		</script>
 	</body>
 </html>
