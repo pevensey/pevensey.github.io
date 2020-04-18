@@ -1025,12 +1025,15 @@
 					midnight();
 				}
 			}
+
+			var seconds;
+			
 			function update_time() {
 					/* Start Time: 2019.09.09 00:00  (timestamp format)*/
 					var start_timestamp = 1567962000;
 					var duration = parseInt((Date.now() / 1000 - start_timestamp ), 10);
 
-					var seconds = duration % 60;
+					seconds = duration % 60;
 					if(seconds < 10) {
 						seconds = "0" + seconds;
 					}
