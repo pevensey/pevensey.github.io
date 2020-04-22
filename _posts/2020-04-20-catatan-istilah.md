@@ -18,7 +18,7 @@ Colons can be used to align columns.
 
 | English       | Bahasa        |
 | ------------- |:-------------:|
-|array	| larik|
+|array	        | larik|
 |artifical neural network | jaringan syaraf tiruan|
 |cache	| tembolok|
 |copy | salin|
@@ -30,6 +30,12 @@ Colons can be used to align columns.
 |server | peladen|
 |link | tautan|
 
+Colons can be used to align columns.
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
