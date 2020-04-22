@@ -17,31 +17,31 @@ Daftar kata-kata ini diambil dan ditemui dari berbagai sumber. Semoga catatan in
 Colons can be used to align columns.
 
 | English       | Bahasa        |
-| -- |:-------------:|
+| ------------- |:-------------:|
 |array	        | larik|
+|----
 |artifical neural network | jaringan syaraf tiruan|
+|----
 |cache	| tembolok|
+|----
 |copy | salin|
+|----
 |error | galat|
+|----
 |list | senarai|
+|----
 |keyboard | papan ketik|
+|----
 |screenshot	| tangkapan layar|
+|----
 |feedback | umpan balik|
+|----
 |server | peladen|
+|----
 |link | tautan|
+|----
+{: rules="groups"}
 
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
 
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
