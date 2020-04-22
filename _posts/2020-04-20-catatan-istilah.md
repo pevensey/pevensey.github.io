@@ -17,7 +17,7 @@ Daftar kata-kata ini diambil dan ditemui dari berbagai sumber. Semoga catatan in
 Colons can be used to align columns.
 
 | English       | Bahasa        |
-| ------------- |:-------------:|
+| -- |:-------------:|
 |array	        | larik|
 |artifical neural network | jaringan syaraf tiruan|
 |cache	| tembolok|
