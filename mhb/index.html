@@ -1059,17 +1059,17 @@
 					duration = (days / 30.41);
 					var months = Math.floor(duration);
 
-					//menghitung lama jadian dalam sisa hari
-					var sisahari = duration - months
-					sisahari = Math.floor(sisahari * 30.41); 
+					//menghitung lama jadian dalam sisa bulan (sisa hari)
+					var sisabulan = duration - months
+					sisabulan = Math.floor(sisabulan * 30.41); 
 					
 					$('#month').text(months);
-					$('#day').text(sisahari);
+					$('#day').text(sisabulan);
 					$('#hour').text(hours);
 					$('#minute').text(minutes);
 					$('#second').text(seconds);
 
-					console.log(months, " bulan ", sisahari, " hari");
+					console.log(months, " bulan ", sisabulan, " hari");
 					console.log(months, " bulan ", days, " hari ", hours, " jam ", minutes, " menit ", seconds, " detik ");
 
 					setTimeout('update_time()', 1000);
