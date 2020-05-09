@@ -383,10 +383,10 @@
 		<div class="bg custom"></div>
 		<div class="container">
 			<div class="jadian">
-				Kita udah jadian selama <br>
+				<p id="jadian"></p> <br>
 				<span id="month"></span> Bulan
 				<span id="day"></span> Hari
-				<br> Semoga langgeng sayang 🤗
+				<br> Semoga langgeng sayang 🤗 <br> 
 			</div> 
 		</div>
 			<!-- <div class="jadian">
@@ -430,6 +430,7 @@
 				randomQuote();
 				specialEffects();
 				update_time();
+				jadian()
 			}
 			baffleEffect = baffle('.note', {
 			    characters: 'supercalifragilisticexpialidocious',
@@ -1073,6 +1074,15 @@
 					console.log(months, " bulan ", days, " hari ", hours, " jam ", minutes, " menit ", seconds, " detik ");
 
 					setTimeout('update_time()', 1000);
+
+					if (sisabulan>=30){
+					txt='Happy Anniversary Sayang 🤗';
+					document.getElementById("jadian").innerHTML = txt;
+					} 
+					else {
+					txt='Kita udah jadian selama :';
+					document.getElementById("jadian").innerHTML = txt;
+					}
 			}
 			const quotes = [
 			{
