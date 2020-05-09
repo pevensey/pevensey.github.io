@@ -1061,11 +1061,7 @@
 
 					//menghitung lama jadian dalam sisa hari
 					var sisahari = duration - months
-					if(sisahari >= 30){
-						months++;
-					}else{
-						sisahari = Math.floor(sisahari * 30.41); 
-					}
+					sisahari = Math.floor(sisahari * 30.41); 
 					
 					$('#month').text(months);
 					$('#day').text(sisahari);
