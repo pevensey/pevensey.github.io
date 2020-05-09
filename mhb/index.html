@@ -388,8 +388,7 @@
 				<span id="day"></span> Hari
 				<br> Semoga langgeng sayang 🤗
 			</div>   -->
-			<div class="jadian">
-				<p id="ucapanjadian"></p>
+			<div class="jadian" id="ucapanjadian">
 				<span id="month"></span> Bulan
 				<span id="day"></span> Hari
 				<br> Semoga langgeng sayang 🤗 
@@ -1064,7 +1063,9 @@
 
 					//menghitung lama jadian dalam sisa bulan (sisa hari)
 					var sisabulan = duration - months
-					//if(sisabulan )
+					if(sisabulan == 0 ){
+						sisabulan = " ";
+					}
 					sisabulan = Math.floor(sisabulan * 30.41); 
 					
 					$('#month').text(months);
