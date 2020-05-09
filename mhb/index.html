@@ -1065,21 +1065,21 @@
 					var sisabulan = duration - months
 					sisabulan = Math.floor(sisabulan * 30.41); 
 
+					$('#month').text(months);
+					$('#day').text(sisabulan);
+					$('#hour').text(hours);
+					$('#minute').text(minutes);
+					$('#second').text(seconds);
+					
 					var txt;
 					if (sisabulan == 0){
 						txt='Happy Monthsarry Sayang';
 						document.getElementById("ucapanjadian").innerHTML = txt;
-						document.getElementById("day").style.display = 'block';
+						//document.getElementById("day").style.display = 'block';
 					} 
 					else {
 						txt='Kita udah jadian selama :';
 						document.getElementById("ucapanjadian").innerHTML = txt;
-						$('#month').text(months);
-						$('#day').text(sisabulan);
-						$('#hour').text(hours);
-						$('#minute').text(minutes);
-						$('#second').text(seconds);
-
 					}
 					console.log(months, " bulan ", sisabulan, " hari");
 					console.log(months, " bulan ", days, " hari ", hours, " jam ", minutes, " menit ", seconds, " detik ");
