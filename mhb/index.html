@@ -1029,7 +1029,8 @@
 			var seconds;
 
 			function update_time() {
-					/* Start Time: 2019.09.09 00:00  (timestamp format)*/
+					/* Start Time: 2019.09.09 00:00  (timestamp format)
+					start_timestamp = tanggal jadian , duration berapa lama jadian dalam milisecond?*/
 					var start_timestamp = 1567962000;
 					var duration = parseInt((Date.now() / 1000 - start_timestamp ), 10);
 
@@ -1054,12 +1055,18 @@
 					var days = duration;
 
 					//duration = parseInt((duration / 30.41))
+					//menghitung lama jadian dalam bulan
 					duration = (days / 30.41);
 					var months = Math.floor(duration);
 
+					//menghitung lama jadian dalam sisa hari
 					var sisahari = duration - months
-					sisahari = Math.floor(sisahari * 30.41); 
-
+					if(sisahari >= 30){
+						months++;
+					}else{
+						sisahari = Math.floor(sisahari * 30.41); 
+					}
+					
 					$('#month').text(months);
 					$('#day').text(sisahari);
 					$('#hour').text(hours);
