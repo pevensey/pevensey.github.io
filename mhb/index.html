@@ -1064,7 +1064,7 @@
 					//menghitung lama jadian dalam sisa bulan (sisa hari)
 					var sisabulan = duration - months
 					if(sisabulan == 0 ){
-						sisabulan = " ";
+						document.getElementById("day").style.display = 'none';
 					}
 					sisabulan = Math.floor(sisabulan * 30.41); 
 					
