@@ -1063,9 +1063,6 @@
 
 					//menghitung lama jadian dalam sisa bulan (sisa hari)
 					var sisabulan = duration - months
-					if(sisabulan == 0 ){
-						document.getElementById("day").style.display = 'none';
-					}
 					sisabulan = Math.floor(sisabulan * 30.41); 
 					
 					$('#month').text(months);
@@ -1078,6 +1075,7 @@
 					if (sisabulan == 0){
 						txt='Happy Monthsarry Sayang';
 						document.getElementById("ucapanjadian").innerHTML = txt;
+						document.getElementById("day").style.display = 'none';
 					} 
 					else {
 						txt='Kita udah jadian selama :';
